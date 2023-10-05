@@ -1,0 +1,1 @@
+This is a repository through which I will start learning low level programming and specifically C programming the ALX way. In this repo there is bound to be various directories for the various c programming concepts that I'll be learning and writing code for.
