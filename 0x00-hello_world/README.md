@@ -8,4 +8,6 @@ This project is aimed at setting up the environment for development in c and get
 
 3-name -> a script that compiles a C file and creates an executable named cisfun, C file name is saved in the variable $CFILE.
 
-4-
+4-puts.c -> A c program that prints "Programming is like building a mulilingual puzzle" followed by a new line, and using the function puts instead of printf. It also returns a value 0 after execution.
+
+5-
