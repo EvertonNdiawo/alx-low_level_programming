@@ -6,4 +6,6 @@ This project is aimed at setting up the environment for development in c and get
 
 2-assembler -> Script that generates the assembly code for a C code and saves it in an output file. The C file name is saved in the variable $CFILE. Output is named same as C file but with the extention .s instead of .c.
 
-3-
+3-name -> a script that compiles a C file and creates an executable named cisfun, C file name is saved in the variable $CFILE.
+
+4-
