@@ -14,11 +14,9 @@
 int main(void)
 {
 	int n;
-
+	int newN;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	int newN ;
 
 	newN = n % 10;
 
