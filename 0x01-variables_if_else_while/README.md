@@ -9,4 +9,8 @@ Below is a detailed outline of what each program does.
 
 3-print_alphabets.c -> A program to print alphabets in lowercase followed by alphabets in uppercase and finally a newline character using the putchar method.
 
-4-
+4-print_alphabt.c -> a program that prints the alphabet in lowercase, followed by a newline and prints all the letters except q and eusing the putchar function.
+
+5-print_numbers.c -> A c program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+
+6-
