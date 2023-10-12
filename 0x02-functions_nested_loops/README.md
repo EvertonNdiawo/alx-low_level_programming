@@ -7,4 +7,6 @@ All the programs are listed below and their functionality.
 
 2-print_alphabet_10x.c -> A program that prints the alphabet in lowercase ten times followed by a newline.
 
-3-
+3-islower.c -> Checks for lowercase character and returns 1 if character is lowercase. Returns 0 otherwise.
+
+4-
