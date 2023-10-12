@@ -9,11 +9,11 @@
  */
 void print_alphabet_x10(void)
 {
-	int ascii = 97;
 	int i = 1;
 
 	while (i < 11)
 	{
+		int ascii = 97;
 
 		while (ascii != 123)
 		{
