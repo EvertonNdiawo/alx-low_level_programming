@@ -8,6 +8,7 @@
  * Description: checks for lowercase letters
  *
  * Return: Returns 1 when success and 0 when not
+ * successfull and 3 when the if conditional does not execute.
  */
 int _islower(int c)
 {
@@ -19,4 +20,6 @@ int _islower(int c)
 	{
 		return (0);
 	}
+
+	return (3);
 }
