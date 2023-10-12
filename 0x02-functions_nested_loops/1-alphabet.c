@@ -11,9 +11,10 @@ void print_alphabet(void)
 {
 	int ascii = 97;
 
-	while (ascii != 122)
+	while (ascii != 123)
 	{
 		char a = ascii;
+
 		_putchar(a);
 		ascii++;
 	}
