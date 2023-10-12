@@ -13,4 +13,6 @@ All the programs are listed below and their functionality.
 
 5-sign.c -> checks for the sign of a number.
 
-6-
+6-abs.c -> computes the absolute value of an integer.
+
+7-
