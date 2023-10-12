@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower: entry point of function.
+ * _islower - entry point of function.
  *
  * @c: passed as an argument in function to
  *
