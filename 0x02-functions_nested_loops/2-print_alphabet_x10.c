@@ -23,8 +23,9 @@ void print_alphabet_x10(void)
 			ascii++;
 		}
 
+		_putchar('\n');
+
 		i++;
 	}
 
-	_putchar('\n');
 }
