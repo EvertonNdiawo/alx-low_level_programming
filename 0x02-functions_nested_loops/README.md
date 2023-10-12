@@ -9,4 +9,6 @@ All the programs are listed below and their functionality.
 
 3-islower.c -> Checks for lowercase character and returns 1 if character is lowercase. Returns 0 otherwise.
 
-4-
+4-isalpha.c -> checks for an alphabetic character.
+
+5-
