@@ -16,12 +16,14 @@ void print_alphabet_x10(void)
 	{
 
 		while (ascii != 123)
-	       	{
-		       	char a = ascii;
+		{
+			char a = ascii;
 
 			_putchar(a);
 			ascii++;
 		}
+
+		i++;
 	}
 
 	_putchar('\n');
