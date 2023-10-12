@@ -9,11 +9,11 @@
  */
 void print_alphabet(void)
 {
-	int ascii = 97;
-	char a = ascii;
+	int ascii = 97
 
 	while (ascii != 122)
 	{
+		char a = ascii;
 		_putchar(a);
 		ascii++;
 	}
