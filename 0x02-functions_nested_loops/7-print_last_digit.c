@@ -9,6 +9,7 @@
  */
 int print_last_digit(int l)
 {
+	l = _abs(l);
 	l %= 10;
 
 	return (l);
