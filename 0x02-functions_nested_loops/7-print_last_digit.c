@@ -4,7 +4,6 @@
  * print_last_digit - Prints last digit of a number.
  *
  * @l: numbert to be checked.
- * @x: variable to hold value.
  *
  * Return: returns value of the last digit.
  */
