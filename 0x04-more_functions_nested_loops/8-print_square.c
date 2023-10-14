@@ -17,12 +17,13 @@ void print_square(int size)
 
 		for (o = 0; o < size; o++)
 		{
-			for (i = 0; o < size; o++)
+			for (i = 0; i < size; i++)
 			{
 				_putchar('#');
 			}
+
+			_putchar('\n');
 		}
 
-		_putchar('\n');
 	}
 }
