@@ -17,9 +17,13 @@ void rev_string(char *s)
 		count++;
 	}
 
-	for (i = count - 1; i >= 0; i--)
+	i = count;
+
+	char str[i];
+
+	for (i -= 1; i >= 0; i--)
 	{
-		*s = s[i];
+		str[i] = s[i];
 	}
 
 }
