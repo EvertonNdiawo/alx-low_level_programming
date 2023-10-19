@@ -10,10 +10,22 @@
  * Return: return pointer to final string at destination.
  */
 
-char *strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int destlen = 0;
-	int srclen = 0;
 	int i;
 
+	while (dest[destlen] != '\0')
+	{
+		destlen++;
+	}
 
+	for (i = 0; i < n; i++)
+	{
+		dest[destlen + i] = src[i];
+	}
+
+	dest[destlen] = '\0';
+
+	return (dest);
+}
