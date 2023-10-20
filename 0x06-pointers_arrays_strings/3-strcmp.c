@@ -15,6 +15,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int s1len = 0;
 	int s2len = 0;
+	int i;
 
 	while (s1[s1len] != '\0')
 	{
@@ -26,16 +27,19 @@ int _strcmp(char *s1, char *s2)
 		s2len++;
 	}
 
-	if (s1len < s2len)
+	for (i = 0; i < (s1len || s2len); i++)
 	{
-		return (10);
-	}
-	else if (s1len == s2len)
-	{
-		return (0);
-	}
-	else
-	{
-		return (-10);
+		if (s1[i] < s2[i])
+		{
+			return (10);
+		}
+		else if (s1[i] == s2[i])
+		{
+			return (0);
+		}
+		else
+		{
+			return (-10);
+		}
 	}
 }
