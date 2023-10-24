@@ -15,7 +15,7 @@
 
 char *_strchr(char *s, char c)
 {
-	size_t i;
+	unsigned int i;
 
 	if (s == NULL)
 	{
