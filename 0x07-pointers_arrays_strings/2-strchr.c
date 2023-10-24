@@ -15,8 +15,13 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-	int len = 0;
+	unsigned int i;
+	unsigned int len = 0;
+
+	if (s == NULL)
+	{
+		return (NULL);
+	}
 
 	while (s[len] != '\0')
 	{
