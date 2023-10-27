@@ -13,3 +13,5 @@ This directory looks into recursion. A widely used concept in c programming and 
 5-sqrt_recursion.c -> A function that returns the natural square root of a number.
 
 6-is_prime_number.c -> A function that returns 1 if the input integer is a prime number, otherwise returns 0.
+
+100-is_palindrome.c -> A function that returns 1 if a string is a palindrome and 0 if not.
