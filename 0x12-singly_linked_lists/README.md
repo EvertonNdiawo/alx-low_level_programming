@@ -1,0 +1,1 @@
+This directory contains work on singly linked lists and how to use them in c programming. For the sake of a late scheduele, the list of tasks will not be provided as of now, but could be updated in the future as time allows for.
