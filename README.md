@@ -1,0 +1,1 @@
+This repository contains work on the c programming language. More detailed examples of the code and the work/tasks they accomplish is included in the various READMEs of the various directories included in the repo.
