@@ -13,4 +13,6 @@ int main(void)
 	int length = strlen(str);
 
 	write(2, str, length);
+
+	return (1);
 }
