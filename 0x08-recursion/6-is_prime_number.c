@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prime-helper - Checks for the divisibility of a number.
+ * prime_helper - Checks for the divisibility of a number.
  * @n: The number to check for divisibility.
  * @i: the divisor.
  *
