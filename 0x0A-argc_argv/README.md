@@ -67,7 +67,7 @@ __4-add.c__
 **100-change.c** 
 - A program that prints the minimum number of coins to make change for an amount of money: 
 
-	1. usage: <span style ="color: green;">./change cents</span>
+	1. usage: `<span style ="color: green;">`./change cents`</span>`
 	2. where **cents** is the amount of cents you need to give back
 	3. if the number of arguments passed to the program is not exactly **1**, prints <span style="color: red;"> Error </span>, followed by a new line and returns **1**.
 	4. Uses <span style ="color: green;"> `atoi` </span> to parse the parameter passed to the program.
