@@ -28,7 +28,4 @@ int main(int argc, char *argv[])
 	result = first * second;
 
 	printf("%d\n", result);
-
-	return (0);
-
 }
