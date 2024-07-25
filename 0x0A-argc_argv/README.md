@@ -6,14 +6,14 @@ These are parameters passed to a program through the main function. Heres a more
 
 
 
-## beginning of explanation:
+## ___beginning of explanation___
 
 - ***argc*** - stands for argument count and is an integer value that represents the total number of arguments passed through the command line to a program, inclusive of the program name.
 
 - ***argv*** - stands for argument vector which is a one-directional array of arguments passed in the form of strings or file names that contain strings of arguments passed to a program through the command line.
 
 
-#### example of declaration use with main
+#### ___example of declaration use with main:___
 ``` 
 	int main(int argc, char *argv[]);
 
@@ -22,7 +22,7 @@ could also be in the form:
 	int main(int argc, **argv);
 ```
 
-## end of explanation
+## ___end of explanation___
 
 
 
