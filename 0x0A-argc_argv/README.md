@@ -28,7 +28,7 @@ could also be in the form:
 
 
 
-#For this projects tasks, these are the detailed explanation of what each code does:
+# For this projects tasks, these are the detailed explanation of what each code does:
 
 __0-whatsmyname.c__ 
 - Prints its name, followed by a new line:
