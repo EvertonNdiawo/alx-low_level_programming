@@ -1,21 +1,29 @@
-This directory explains and contains content on  #__argc__ and __argv__#
+This directory explains and contains content on  #__argc__ and __argv__
+
 
 These are parameters passed to a program through the main function. Heres a more detailed explanation of what each of them stands for and does in a program: 
 
+
+
+
 ### beginning of explanation.
 
-		***argc*** - stands for **argument count** and is an integer value that represents the total number of arguments passed through the command line to a program, inclusive of the program name.
+***argc*** - stands for **argument count** and is an integer value that represents the total number of arguments passed through the command line to a program, inclusive of the program name.
 
-		___argv___ - stands for __argument vector__ which is a one-directional array of arguments passed in the form of strings or file names that contain strings of arguments passed to a program through the command line.
+___argv___ - stands for __argument vector__ which is a one-directional array of arguments passed in the form of strings or file names that contain strings of arguments passed to a program through the command line.
 
 
 #### **example of declaration use with main**
 
-int main(int argc, char \*argv[]);
+	int main(int argc, char \*argv[]);
 
-could also be in the form : int main(int argc, **argv)
+	could also be in the form : int main(int argc, **argv)
+
 
 ### end of explanation
+
+
+
 
 
 For this projects tasks, these are the detailed explanation of what each code does:
