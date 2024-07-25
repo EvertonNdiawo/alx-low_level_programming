@@ -12,25 +12,23 @@
 
 int main(int argc, char *argv[])
 {
+	if (argc < 3)
+	{
+		printf("Error\n");
+
+		return (1);
+	}
+
 	int result;
 	int first;
 	int second;
 
 	first = atoi(argv[1]);
 	second = atoi(argv[2]);
+	result = first * second;
 
-	if (argc != 3)
-	{
-		printf("Error\n");
+	printf("%d\n", result);
 
-		return (1);
-	}
-	else
-	{
-		result = first * second;
+	return (0);
 
-		printf("%d\n", result);
-		
-		return (0);
-	}
 }
