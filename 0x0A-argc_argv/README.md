@@ -67,7 +67,7 @@ __4-add.c__
 **100-change.c** 
 - A program that prints the minimum number of coins to make change for an amount of money: 
 
-	1. usage: `./change_cents`
+	1. usage: *`./change`* *`cents`*
 	2. where `cents` is the amount of cents you need to give back
 	3. if the number of arguments passed to the program is not exactly `1`, prints `Error`, followed by a new line and returns `1`.
 	4. Uses `atoi` to parse the parameter passed to the program.
