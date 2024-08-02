@@ -26,32 +26,32 @@
 
 ### <u>Mandatory</u>
 
-___0-print_list.c___
+1.  ___0-print_list.c___
 - prototype: `size_t print_list(const list_t *h);`
 - Prints all the elements of a `list_t` list.
 - Returns the number of nodes.
 - If `str` is `NULL`, prints `[0] (nil)`.
 - `printf` function allowed.
 
-___1-list_len.c___ 
+2. ___1-list_len.c___ 
 - Returns the number of elements in a linked `list_t` list.
 - prototype: `size_t list_len(const list_t *h);`
 
-___2-add_node.c___
+3. ___2-add_node.c___
 - Adds a new node at the beginning of a `list_t` list.
 - Prototype: `list_t *add_node(list_t **head, const char *str);`
 - Returns: the address of the new element, or `NULL` if failure.
 - `str` needs to be duplicated.
 - `strdup` function allowed.
 
-___3-add_node_end.c___ 
+4. ___3-add_node_end.c___ 
 - Function that adds a new node at the end of a `list_t` list.
 - Prototype: `list_t *add_node_end(list_t **head, const char *str);`
 - Returns the address of the new element, or `NULL` if failure.
 - `str` needs to be duplicated.
 - `strdup` function allowed.
 
-___4-free_list.c___
+5. ___4-free_list.c___
 - Function that frees a `list_t` list.
 - Prototype: `void free_list(list_t **head);
 
@@ -59,11 +59,11 @@ ___4-free_list.c___
 
 ### <u>Advanced</u>
 
-___100-first.c___
+1. ___100-first.c___
 - A function that prints ***You're beat! and yet, you must allow, |nI bore my house upon my back!\n*** before the `main` function is executed.
 - `printf` function allowed.
 
-___101-hello_holberton.asm___
+2. ___101-hello_holberton.asm___
 - A 64-bit prigram in assembly that prints ***Hello, Holberton***, followed by a new line.
 - `printf` function allowed.
 - use of interrupts not allowed.
