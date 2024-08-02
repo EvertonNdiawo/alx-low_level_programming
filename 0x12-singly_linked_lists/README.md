@@ -1,6 +1,6 @@
-#Singly Linked Lists
+# Singly Linked Lists
 
-###Explanation
+### Explanation
 
 - Linked lists are a data structure in c programming language used to represent information either in links to each other, in circular trajectory or in a manner in which the item in between two items can have acccess to data on either side of it.
 
@@ -12,7 +12,7 @@
 
 - The last item in the list points to NULL and is considered the tail of the list.
 
-###example of code to create a structure for the singly linked list.
+### example of code to create a structure for the singly linked list.
 
 ```c
 
