@@ -24,7 +24,7 @@
 ## **Project tasks**
 
 
-### <u>___Mandatory___</u>
+### <u>Mandatory</u>
 
 ___0-print_list.c___
 - prototype: `size_t print_list(const list_t *h);`
@@ -57,7 +57,7 @@ ___4-free_list.c___
 
 
 
-### <u> ***Advanced***</u>
+### <u>Advanced</u>
 
 ___100-first.c___
 - A function that prints ***You're beat! and yet, you must allow, |nI bore my house upon my back!\n*** before the `main` function is executed.
