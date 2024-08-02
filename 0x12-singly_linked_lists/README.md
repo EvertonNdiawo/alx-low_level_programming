@@ -15,5 +15,8 @@
 ### example of code to create a structure for the singly linked list.
 
 ```c
-
+	struct node{
+		int data;
+		struct node *next;
+	}
 ```
