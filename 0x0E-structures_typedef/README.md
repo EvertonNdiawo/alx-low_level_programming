@@ -24,9 +24,9 @@ From this example then, a user can then declare new variables as date now become
 ```
 This statement declares a new variable, `today` of type date.
 
-##### Accessing  members.
+#### Accessing  members.
 
-Members of a structure type are accessed using two methods, the dot operator, whereby you specify the variable name, followed by a dot and finally the member to be accessed.
+1. Members of a structure type are accessed using two methods, the dot operator, whereby you specify the variable name, followed by a dot and finally the member to be accessed.
 
 ```
 	today.day = 21;
@@ -38,6 +38,27 @@ Members of a structure type are accessed using two methods, the dot operator, wh
 		nextMonth = 2;
 	}
 ```
+
+2. Members can also be accessed through a pointer, in a manner described below:
+
+```
+	struct point {
+		int x;
+		int y;
+	};
+
+	struct point my_point = {3, 7};
+	struct point *p = &my_point;
+```
+- Here, the member y of the variable my_point can be set to 98 by;
+
+	- p->y = 98 : The `->` operator is used to access members of the structure that `p` points to.
+	- my_point.y = 98: Directly accesses the `y` member of the `my_point` structure.
+	- (*p).y = 98: p is a pointer to `my_point` so (*p) dereferences the pointer and then `.y` accesses the y member. 
+
+
+*NOTE:* the operator `->` can only be used with pointers to access the members of a structure variable.
+
 
 # Tasks
 
