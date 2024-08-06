@@ -15,7 +15,7 @@ In this example, we define a structure called **date** that consists of three co
 	};
 ```
 
-This particular structure contains three integer **members** called Month, day and year. 
+This particular structure contains three integer **members** called Month, day and year.
 
 From this example then, a user can then declare new variables as date now becomes a user defined variable just like int, char or any other basic types.
 
@@ -54,7 +54,7 @@ This statement declares a new variable, `today` of type date.
 
 	- p->y = 98 : The `->` operator is used to access members of the structure that `p` points to.
 	- my_point.y = 98: Directly accesses the `y` member of the `my_point` structure.
-	- (*p).y = 98: p is a pointer to `my_point` so (*p) dereferences the pointer and then `.y` accesses the y member. 
+	- (*p).y = 98: p is a pointer to `my_point` so (*p) dereferences the pointer and then `.y` accesses the y member.
 
 
 *NOTE:* the operator `->` can only be used with pointers to access the members of a structure variable.
