@@ -1,5 +1,11 @@
 #include "dog.h"
-#include <>
+#include <stddef.h>
+
+/*
+ * For the declaration of "NULL" because for
+ * some reason the checker fails without this
+ * header file or the "stdio.h" one
+ */
 
 /**
  * init_dog - Initializes a variable of type struct dog.
