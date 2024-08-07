@@ -7,7 +7,7 @@
 ***typedef*** is a way of specifying an alias for an identifier in C programming language. For instance;
 
 ```
-	struct dog my_dog;
+	struct dog;
 
 ```
 
