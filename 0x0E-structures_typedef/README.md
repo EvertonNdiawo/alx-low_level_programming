@@ -4,6 +4,21 @@
 
 ***Structures*** are a data structure in C programmming language that allows grouping of different data types together, much like an array only that arrays group items of the same type.
 
+***typedef*** is a way of specifying an alias for an identifier in C programming language. For instance;
+
+```
+	struct dog my_dog;
+
+```
+
+could be declared as: 
+
+```
+	typedef struct dog my_dog;
+```
+
+and would therefore provide an alias for the identification of struct dog and therefore instead of identifying it as `struct dog`, one would only need to write `my_dog` when using an instance of struct dog.
+
 ## Example code
 In this example, we define a structure called **date** that consists of three components that represent the `month`, `day` and `year`.
 
@@ -70,4 +85,16 @@ This statement declares a new variable, `today` of type date.
 
 - A function that prints a `struct dog`
 
-**3**
+**4-new_dog.c**
+
+- A function that creates a new dog.
+
+	- Stores a copy of `name` and `owner`
+	- Returns `NULL` if the function fails.
+
+**5-free_dog.c**
+
+- A function that frees dogs.
+
+
+# The END
