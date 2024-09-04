@@ -1,14 +1,14 @@
-#AUTOMATIC AND DYNAMIC MEMORY ALLOCATION (_malloc_ and _free_)
+# AUTOMATIC AND DYNAMIC MEMORY ALLOCATION (_malloc_ and _free_)
 
 **malloc** - c function used to allocate and reserve a specified amount of memory by a program during execution. It does this by requesting for the specified amount of memory from the **heap** and if the request is granted: 
 
 			1. OS reserves the requested amount of memory
-			2. Malloc returns a _pointer_ to the _reserved space_.
+			2. Malloc returns a pointer to the reserved space.
 
 **free** - Calling this function returns the amount of memory previously requested through malloc to the OS when it is no longer needed by the program.
 
 
-###Automatic allocation
+### Automatic allocation
 
 - Automatic allocation of memory occurs in instances such as:
 		
@@ -21,19 +21,21 @@
 
 				
 
-####special case: String literals
+#### special case: String literals
 
 Memory used to store strings within double quotes `" "` is handled in a special way: 
 
 for example:  
-		``` 
+		``C 
+			
 			char *str;
 
 			str = "Everton";
+
 		```
 
 Here, the string _Everton_ that is declared is stored automatically in memory when the program is executing. However, this memory is **only readable**. 
-		```
+		``C
 			str[1] = 'x';
 		```
 Trying to change  a character in the manner above results in a segmentation fault error. This is because the variable `str` is a pointer to a char, which is initialized to the address of the first character of the string `Everton`. This string is however stored in a `read-only` memory and is also not released when the function returns.
