@@ -7,17 +7,22 @@
 	- ___Dynamic library___ (.so file type)
 
 - The difference between these libraries comes in how they are created, how the data in them are stored and accessed in them etc.Here's several differences in depth:
-	- Static library is created using the `ar` program with `gcc`. Dynamic library is however created by using the `-shared' flag in alongside already compiled object files.
+	- Static library is created using the `ar` program with `gcc`. Dynamic library is however created by using the `-shared` flag in alongside already compiled object files.
+
 	- Dynamic library is sort of passed by reference, i.e the address to the path where the library is located is passed to the final executable and thus making the use of dynamic libraries result in better performance. With a static library however, the code in the library is included in the final executable.
+
 	- Updating any component in the dynamic library does not result in recompiling the library whereas with the static library, a change in code for any of the files used in creation of the library necessitates for the reconstitution of the library.
+
 
 __NB:__ Dynamic libraries are also known as `shared` libraries and there exists an interface in python through which these libraries can be accessed and C code and python code utilised in a program. 
 
 ## naming conventions for libraries:
 
-A library such as `FOO` is generally named;
-	1. libFOO.a -> if it is a static library
-	2. libFOO.so -> if it is a dynamic(shared) library.
+- A library such as `FOO` is generally named;
+
+	1. `libFOO.a` -> if it is a static library
+	2. `libFOO.so` -> if it is a dynamic(shared) library.
+
 	This allows the gcc compiler to correctly identify the library during runtime.
 
 ## How to create a dynamic library in C:
@@ -36,12 +41,15 @@ A library such as `FOO` is generally named;
 	this results into generation of object codes that are `Position dependent` i.e not position independent and thus not accessible from anywhere.
 
 
+
 2. Build the library from the resultant object files( i.e created .o files) using the `-shared` flag.
 	```
 		gcc -shared -o libFCT.so *.o
 	```
 
 	this creates a library, FCT.so that is a shared library comprising all the object files in the current working directory. i.e file1.o file2.o, filex.o etc.
+
+
 
 ## Calling a created library:
 
@@ -58,14 +66,18 @@ A library such as `FOO` is generally named;
 	-  The flag (-L) indicates where the library is to be found.
 	-  The flag (-l) specifies the library.
 
+
+
 ## Running an executable linked to a (.so) file:
 
 Running the (call_Dynamic) program should be:
 
 (i) call_dynamic
+	
 	or
 
 (ii) ./call_Dynamic if "."(The current directory) where call_Dynamic is in is not in the PATH variable.
+
 
 To ensure the shared library is always found at runtime, its directory must be in the varible PATH:
 `LD_LIBRARY_PATH` by:
@@ -73,6 +85,7 @@ To ensure the shared library is always found at runtime, its directory must be i
 ```
 export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
 ```
+
 
 ## soname of a library:
 
@@ -86,8 +99,9 @@ export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
 
 # Project tasks:
 
-0. A library is not a luxury but one of the necessities of life.
-	- Create the dynamic library libdynamic.so containing all th functions listed below:
+0. ___A library is not a luxury but one of the necessities of life.___
+	- Create the dynamic library `libdynamic.so` containing all the functions listed below:
+	```	
 		int _putchar(char c);
 		int _islower(int c);
 		int _isalpha(int c);
@@ -107,35 +121,35 @@ export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
 		unsigned int _strspn(char *s, char *accept);
 		char *_strpbrk(char *s, char *accept);
 		char *_strstr(char *haystack, char *needle);
+	```
 
 
+1. ___Without libraries what have we?We have no past and no future.___
 
-1. Without libraries what have we?We have no past and no future.
-
-- Create a script that creates a dynamic library called `liball.so` from all the `.c` files that are in the current directory.
-
-
-2. Let's call C functions from Python.
-- Create a dynamic library that contains C functions that can be called from Python.
+	- Create a script that creates a dynamic library called `liball.so` from all the `.c` files that are in the current directory.
 
 
-3. Code injection: Win the Giga Millions!
+2. ___Let's call C functions from Python.___
+	- Create a dynamic library that contains C functions that can be called from Python.
 
-- I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot?
+
+3. ___Code injection: Win the Giga Millions!___
+
+	- I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot?
 
 	- Our mole got us a copy of the program, you can download it here. Our mole also gave us a piece of documentation:
 
-
-- ```
-	/* Giga Millions program                                                                                    
-  	* Players may pick six numbers from two separate pools of numbers:                                                
-  	* - five different numbers from 1 to 75 and                                                                       
-  	* - one number from 1 to 15                                                                                       
-  	* You win the jackpot by matching all six winning numbers in a drawing.                                           
-  	* Your chances to win the jackpot is 1 in 258,890,850                                                             
-  	*                                                                                                                 
-  	* usage: ./gm n1 n2 n3 n4 n5 bonus
-```
+ 
+		```
+			/* Giga Millions program                                                                                    
+	  		* Players may pick six numbers from two separate pools of numbers:                                                
+  			* - five different numbers from 1 to 75 and                                                                       
+  			* - one number from 1 to 15                                                                                       
+  			* You win the jackpot by matching all six winning numbers in a drawing.                                           
+  			* Your chances to win the jackpot is 1 in 258,890,850                                                             
+  			*                                                                                                                 
+  			* usage: ./gm n1 n2 n3 n4 n5 bonus
+		```
 
 	- You can’t modify the program gm itself as Master Sysadmin Sylvain (MSS) always checks its MD5 before running it
 	- The system is an Linux Ubuntu 16.04
@@ -148,7 +162,7 @@ export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
 	- MSS will use the same terminal and session than our mole
 	- Before running the gm program, MSS always check the content of the directory
 	- MSS always exit after running the program gm
-TL;DR; This is what is going to happen.
+	- TL;DR; This is what is going to happen.
 
 
 
