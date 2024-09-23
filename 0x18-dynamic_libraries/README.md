@@ -50,6 +50,12 @@ __NB:__ Dynamic libraries are also known as `shared` libraries and there exists 
 	this creates a library, FCT.so that is a shared library comprising all the object files in the current working directory. i.e file1.o file2.o, filex.o etc.
 
 
+## View contents of a dynamic library in gcc:
+
+- The contents of a dynamic library, say `libmylibrary.so` can be viewed using the command below:
+```
+	nm -D libmylibrary.so
+```
 
 ## Calling a created library:
 
